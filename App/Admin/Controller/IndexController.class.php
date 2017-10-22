@@ -11,7 +11,7 @@ class IndexController extends Controller {
     public function index(){
     	$this->display();
     }
-    public function new_index(){
+    public function new_index1(){
     	$this->display();
     }
 }
