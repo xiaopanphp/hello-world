@@ -16,6 +16,7 @@ use Think\Controller;
 class GoodsController extends Controller {
 
     public function index(){
+	echo 2;
     	$this->display();
     }
 	
