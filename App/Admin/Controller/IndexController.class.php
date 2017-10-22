@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 namespace Admin\Controller;
 use Think\Controller;
 class IndexController extends Controller {
@@ -12,6 +12,7 @@ class IndexController extends Controller {
     	$this->display();
     }
     public function new_index(){
+	echo 44;
     	$this->display();
     }
 }
