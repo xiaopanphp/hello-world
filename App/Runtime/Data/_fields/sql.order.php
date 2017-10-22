@@ -1,0 +1,1 @@
+a:8:{i:0;s:2:"id";i:1;s:3:"uid";i:2;s:3:"aid";i:3;s:10:"totalprice";i:4;s:4:"time";i:5;s:6:"static";s:3:"_pk";s:2:"id";s:5:"_type";a:6:{s:2:"id";s:7:"int(11)";s:3:"uid";s:7:"int(11)";s:3:"aid";s:7:"int(11)";s:10:"totalprice";s:10:"binary(10)";s:4:"time";s:11:"varchar(11)";s:6:"static";s:10:"tinyint(4)";}}

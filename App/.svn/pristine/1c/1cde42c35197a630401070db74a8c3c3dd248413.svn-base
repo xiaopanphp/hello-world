@@ -1,0 +1,218 @@
+<html>
+	<heaD>
+		<title>折800抽奖</title>
+			<meta charset="utf-8">
+	</heaD>
+	<style>
+		a:hover{
+			text-decoration:none;
+			color:red;
+		}
+		.top_index{
+			float:right;
+		}
+		#img{
+			width:100%;
+			height:400px;
+		}
+		#img_img{
+			width:100%;
+			height:20px;
+			margin-top:-10px;
+		}
+		.content_img{
+			width:100%;
+		}
+		.login{
+		
+			position:absolute;
+			z-index:10;
+			right:50px;
+			top:150px;
+		}
+		.register{
+			position:absolute;
+			z-index:10;
+			right:50px;
+			top:250px;
+		}
+		.content{
+			width:100%;
+			position:relative;
+			float:left;
+		}
+		.aa{
+			position:relative;
+			z-index:10;
+			top:-180px;
+			float:right;
+			right:30px;
+		}
+		.bg{
+			width:100%;
+			position:relative;
+		}
+		.bg_imgs{
+			position:absolute;
+			z-index:10;
+			right:0px;
+			top:550px;
+		}
+		.bg_size{
+			position:absolute;
+			z-index:11;
+			right:0px;
+			top:550px;
+			width:515px;
+			height:510px;
+			right:20px;
+			top:18px;
+			font-family:"微软雅黑";
+			line-height:32px;
+			color:#393939;
+			box-shadow: 2px 10px 20px #909090;
+			border-radius:15px;
+			background:transparent;
+		    margin-top:-1em;
+		}
+		.bg_size_title{
+			color:#C7000B;
+			font-size:25px;
+			font-weight:bold;
+		}
+		.bg_size_bottom{
+			color:#00315F;
+		}
+		.bg_size_bottom span{
+			color:#C7000B;
+		}
+		.bg_size_space{
+			height:50px;
+		}
+		.bg_img{
+			position:absolute;
+			z-index:10;
+			right:565px;
+			top:550px;
+		}
+		.smail_one{
+			position:absolute;
+			z-index:10;
+			right:280px;
+			top:100px;
+		}
+		.smail_two{
+			position:absolute;
+			z-index:10;
+			right:80px;
+			top:100px;
+		}
+		.smail_three{
+			position:absolute;
+			z-index:10;
+			right:80px;
+			top:300px;
+		}
+		.smail_four{
+			position:absolute;
+			z-index:10;
+			right:280px;
+			top:300px;
+		}
+		.right:{
+			position:absolute;
+			z-index:50;
+			width:200px;
+			height:300px;
+		}
+		.content_size{
+			position:absolute;
+			z-index:30;
+			width:400px;
+			height:30px;
+			font-size:16px;
+			font-family:"楷体";
+			left:650px;
+			top:10px;
+		}
+		.content_size span{
+			font-family:"微软雅黑";
+			font-size:16px;
+			line-height:32px;
+			color:#C7000B;
+			font-weight:bold;
+		}
+		.draw_list{
+			width:450px;
+			height:180px;
+			position:absolute;
+			z-index:20;
+			border:1px solid #C7000B;
+			right:60px;
+			top:370px;
+			box-shadow: 0px 7px 7px #C7000B;
+		}
+		.draw_list_user{
+			width:450px;
+			height:50px;
+			float:left;
+			border:1px solid #C7000B;
+			margin-top:5px;
+			box-shadow: 2px -2px 3px #C7000B;
+		}
+	</style>
+	<body>
+		<div class="img">
+			<img id="img" src="__IMAGES__/draw/banner_center01.jpg">
+			<img id="img_img" src="__IMAGES__/draw/bar.fw.png">
+		</div>
+		<div class="content">
+				<div class="content_size">
+					<span>01</span>登录有奖
+					<br>
+					&nbsp&nbsp会员赠送1次抽奖机会，凡在此商城购买商品赠送一次抽奖!<br>
+					<span>02</span>注册有奖<br>
+					&nbsp&nbsp注册会员即获得更多抽奖机会，赶快加入我们把！
+				</div>
+				<img class="content_img" src="__IMAGES__/draw/cont01_bg.jpg">
+				<a href="<{:U('Login/login')}>"><img  class="login" src="__IMAGES__/draw/btn01.jpg"></a>
+				<a href="<{:U('Login/register')}>"><img class="register" src="__IMAGES__/draw/btn02.jpg"></a>
+				<div class="right">
+				</div>
+				<block name="draw"></block>
+				<div class="aa">
+					<img  src="__IMAGES__/draw/bg_mingdan_top.jpg">
+				</div>
+				<!--中奖名单-->
+				<div class="draw_list">
+					<div class="draw_list_user">
+					</div>
+					
+				</div>
+		</div>
+		<div class="bg">
+				<div class="bg_img">
+					<img src="__IMAGES__/draw/cont02_bg.jpg">
+					<img  class="smail_one" src="__IMAGES__/draw/pr02.jpg">
+					<img  class="smail_two"src="__IMAGES__/draw/pr03.jpg">
+					<img  class="smail_three" src="__IMAGES__/draw/pr04.jpg">
+					<img  class="smail_four" src="__IMAGES__/draw/pr01.jpg">
+				</div>
+
+				<div class="bg_imgs">
+					<img src="__IMAGES__/draw/cont03_bg.jpg">
+					<div class="bg_size">
+						<center class="bg_size_title">抽奖规则</center>
+						<b>1</b>、普通用户每次订单赠送1次抽奖机会，会员每月赠送2次抽奖机会。所有抽奖机会仅限当月使用，高级会员与体验会员当月抽奖机会次数不叠加使用，当月内重复开销会员无法重复领取抽奖次数；<br>
+						<b>2</b>、所有会员每天仅限抽奖5次，当月抽奖机会，每个自然月底自动清零；<br>
+						<b>3</b>、 用户按“开始抽奖”激活轮盘转动抽奖，用户可获得轮盘最终所停留在的奖品。<br>
+						<b>4</b>、本次活动为随机抽奖，您将实时获得您的中奖信息。<br>
+						<b>5</b>、所抽中的奖品，可以选择”领取”或”不领取”，如选择”不领取”则视为放弃本次领奖机会。<br>
+						<b>6</b>、会员可进行中奖查询，“获奖信息”中将显示中奖记录。<br>
+						<div class="bg_size_space"></div>
+						<center class="bg_size_bottom">本次活动最终解释权归<span>倔强的萝卜团队</span>所有</center>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>

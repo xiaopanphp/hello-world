@@ -1,0 +1,15 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class ActivityController extends Controller {
+	 public function _initialize(){
+        $close=M('close');
+        $result=$close->find();
+        if($result['close']==1){
+            $this->redirect("Public/a");
+        }
+    }
+	public function Index(){
+		$this->display();
+	}	
+}

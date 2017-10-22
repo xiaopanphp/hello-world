@@ -1,0 +1,11 @@
+<?php
+namespace Home\Widget;
+use Think\Controller;
+class PublicWidget extends Controller {
+    public function search(){
+	    $goodsclass=M('goodsclass');
+	    $result=$goodsclass->where("pid=0")->select();
+	    $this->assign("class",$result);
+	    $this->display("Public:search");
+    } 
+}
