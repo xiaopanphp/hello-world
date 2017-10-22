@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 namespace Admin\Controller;
 use Think\Controller;
 class OrderController extends Controller {
@@ -9,6 +9,7 @@ class OrderController extends Controller {
 		}
 	}
     public function index(){
+	$this->display();
     }
     public function order_list(){
         $search=I('search');
