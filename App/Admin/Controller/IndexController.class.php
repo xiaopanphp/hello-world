@@ -11,8 +11,13 @@ class IndexController extends Controller {
     public function index(){
     	$this->display();
     }
+<<<<<<< HEAD
     public function new_index(){
 	echo 44;
+=======
+    public function new_index1(){
+	 echo 2;
+>>>>>>> 7c5c847b96060b022b8699eb4b81b54d550818ef
     	$this->display();
     }
 }
