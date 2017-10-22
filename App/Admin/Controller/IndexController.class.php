@@ -12,6 +12,7 @@ class IndexController extends Controller {
     	$this->display();
     }
     public function new_index1(){
+	 echo 2;
     	$this->display();
     }
 }
