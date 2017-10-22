@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 namespace Admin\Controller;
 use Think\Controller;
 class UserController extends Controller {
@@ -8,6 +8,7 @@ class UserController extends Controller {
         }
      }
     public function index(){ 
+		echo 1;
 		$this->display();
 
     }
